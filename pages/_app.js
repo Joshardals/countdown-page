@@ -1,5 +1,10 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 const GlobalStyle = createGlobalStyle`
+  /* Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+
+  /* Variables */
+  
   :root {
     
     /* Primary */
@@ -20,8 +25,10 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh; 
     width: 100%; 
     overflow-x: hidden;
+    font-family: 'Red Hat Text', sans-serif;
     font-size: 14px;
     font-weight: 700; 
+    letter-spacing: 3px; 
     background: linear-gradient(to bottom, var(--blue-black), #2f2439);  
   }
 `;
