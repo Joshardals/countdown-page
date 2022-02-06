@@ -32,13 +32,13 @@ const Time = ({ dhms }) => {
   };
 
   useEffect(() => {
-    const timerId = setInterval(() => tick(), 1000);
-    return () => clearInterval(timerId);
+    // const timerId = setInterval(() => tick(), 1000);
+    // return () => clearInterval(timerId);
   });
   return (
     <Wrapper>
       <ItemWrapper>
-        <Item>08</Item>
+        <Item>{hrs}</Item>
         <Footer>Days</Footer>
       </ItemWrapper>
       <ItemWrapper>
