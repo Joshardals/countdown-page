@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Time from "./components/Time";
 
 export default function Home() {
+  const dhms = { days: 8, hours: 23, minutes: 55, seconds: 41 };
   return (
     <Wrapper>
       <Head>
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Launch>WE'RE ARE LAUNCHING SOON</Launch>
-      <Time />
+      <Time dhms={dhms} />
       <Footer />
     </Wrapper>
   );
