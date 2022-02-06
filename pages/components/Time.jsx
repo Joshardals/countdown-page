@@ -2,39 +2,39 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const Time = ({ dhms }) => {
-  const { days = 0, hours = 0, minutes = 0, seconds = 0 } = dhms;
-  const [[dys, hrs, mins, secs], setTime] = useState([8, 23, 55, 41]);
-  const tick = () => {
-    if (dys === 0 && hrs === 0 && mins === 0 && secs === 0) {
-      reset();
-    } else if (mins === 0 && secs === 0) {
-      setTime(() => {
-        [dys, hrs - 1, 59, 59];
-      });
-    } else if (secs === 0) {
-      setTime(() => {
-        [dys, hrs, mins - 1, 59];
-      });
-    } else {
-      setTime(() => {
-        [dys, hrs, mins, secs - 1];
-      });
-    }
-  };
+  // const { days = 0, hours = 0, minutes = 0, seconds = 0 } = dhms;
+  // const [[dys, hrs, mins, secs], setTime] = useState([8, 23, 55, 41]);
+  // const tick = () => {
+  //   if (dys === 0 && hrs === 0 && mins === 0 && secs === 0) {
+  //     reset();
+  //   } else if (mins === 0 && secs === 0) {
+  //     setTime(() => {
+  //       [dys, hrs - 1, 59, 59];
+  //     });
+  //   } else if (secs === 0) {
+  //     setTime(() => {
+  //       [dys, hrs, mins - 1, 59];
+  //     });
+  //   } else {
+  //     setTime(() => {
+  //       [dys, hrs, mins, secs - 1];
+  //     });
+  //   }
+  // };
 
-  const reset = () => {
-    setTime([
-      parseInt(days),
-      parseInt(hours),
-      parseInt(minutes),
-      parseInt(seconds),
-    ]);
-  };
+  // const reset = () => {
+  //   setTime([
+  //     parseInt(days),
+  //     parseInt(hours),
+  //     parseInt(minutes),
+  //     parseInt(seconds),
+  //   ]);
+  // };
 
-  useEffect(() => {
-    // const timerId = setInterval(() => tick(), 1000);
-    // return () => clearInterval(timerId);
-  });
+  // useEffect(() => {
+  //   // const timerId = setInterval(() => tick(), 1000);
+  //   // return () => clearInterval(timerId);
+  // });
   return (
     <Wrapper>
       <ItemWrapper>
