@@ -38,7 +38,7 @@ const Time = ({ dhms }) => {
   return (
     <Wrapper>
       <ItemWrapper>
-        <Item>{hrs}</Item>
+        <Item>08</Item>
         <Footer>Days</Footer>
       </ItemWrapper>
       <ItemWrapper>
