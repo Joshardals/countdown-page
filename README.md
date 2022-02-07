@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](./public/screenshots/countdown-desktop.png)
-![Mobile](./public/screenshots/countdown-mobile.png)
+![Desktop](./public/countdown-desktop.png)
+![Mobile](./public/countdown-mobile.png)
 
 ### Links
 
