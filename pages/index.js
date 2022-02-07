@@ -12,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Launch>WE'RE ARE LAUNCHING SOON</Launch>
-      <Time dhms={dhms} />
+      <Time />
       <Footer />
     </Wrapper>
   );

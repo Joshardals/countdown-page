@@ -1,58 +1,38 @@
 import { useState, useEffect } from "react";
 import styled from "styled-components";
+import Countdown, { zeroPad } from "react-countdown";
 
-const Time = ({ dhms }) => {
-  // const { days = 0, hours = 0, minutes = 0, seconds = 0 } = dhms;
-  // const [[dys, hrs, mins, secs], setTime] = useState([8, 23, 55, 41]);
-  // const tick = () => {
-  //   if (dys === 0 && hrs === 0 && mins === 0 && secs === 0) {
-  //     reset();
-  //   } else if (mins === 0 && secs === 0) {
-  //     setTime(() => {
-  //       [dys, hrs - 1, 59, 59];
-  //     });
-  //   } else if (secs === 0) {
-  //     setTime(() => {
-  //       [dys, hrs, mins - 1, 59];
-  //     });
-  //   } else {
-  //     setTime(() => {
-  //       [dys, hrs, mins, secs - 1];
-  //     });
-  //   }
-  // };
-
-  // const reset = () => {
-  //   setTime([
-  //     parseInt(days),
-  //     parseInt(hours),
-  //     parseInt(minutes),
-  //     parseInt(seconds),
-  //   ]);
-  // };
-
-  // useEffect(() => {
-  //   // const timerId = setInterval(() => tick(), 1000);
-  //   // return () => clearInterval(timerId);
-  // });
+const renderer = ({ days, hours, minutes, seconds }) => {
   return (
-    <Wrapper>
+    <>
       <ItemWrapper>
-        <Item>08</Item>
+        <Item>{zeroPad(days)}</Item>
         <Footer>Days</Footer>
       </ItemWrapper>
       <ItemWrapper>
-        <Item>23</Item>
+        <Item>{zeroPad(hours)}</Item>
         <Footer>Hours</Footer>
       </ItemWrapper>
       <ItemWrapper>
-        <Item>55</Item>
+        <Item>{zeroPad(minutes)}</Item>
         <Footer>Minutes</Footer>
       </ItemWrapper>
       <ItemWrapper>
-        <Item>41</Item>
+        <Item>{zeroPad(seconds)}</Item>
         <Footer>Seconds</Footer>
       </ItemWrapper>
+    </>
+  );
+};
+
+const Time = () => {
+  return (
+    <Wrapper>
+      <Countdown
+        date={Date.now() + 777600000}
+        intervalDelay={1}
+        renderer={renderer}
+      />
     </Wrapper>
   );
 };
