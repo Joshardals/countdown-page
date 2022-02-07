@@ -1,18 +1,24 @@
 import React from "react";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faPinterest,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
     <Wrapper>
       <SocialContainer>
-        <SocialLink href="#">
-          <SocialImg src="/icon-facebook.svg" />
+        <SocialLink href="https://web.facebook.com/joshardals/">
+          <FontAwesomeIcon icon={faFacebook} />
         </SocialLink>
         <SocialLink href="#">
-          <SocialImg src="/icon-pinterest.svg" />
+          <FontAwesomeIcon icon={faPinterest} />
         </SocialLink>
-        <SocialLink href="#">
-          <SocialImg src="/icon-instagram.svg" />
+        <SocialLink href="https://www.instagram.com/joshardals/">
+          <FontAwesomeIcon icon={faInstagram} />
         </SocialLink>
       </SocialContainer>
 
@@ -55,25 +61,32 @@ const Wrapper = styled.div`
 const SocialContainer = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
 `;
 const SocialLink = styled.a`
   margin: 0 1rem 0 1rem;
   cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  color: var(--grayish-blue);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--soft-red);
+  }
 `;
-const SocialImg = styled.img``;
 const Author = styled.div`
   color: var(--grayish-blue);
   letter-spacing: 1px;
   text-align: center;
   font-size: 12px;
+  margin-top: 0.8rem;
   a {
-    color: var(--grayish-blue);
+    color: var(--white);
     text-decoration: none;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-      color: var(--white);
+      color: var(--soft-red);
     }
   }
 `;

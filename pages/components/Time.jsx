@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import Countdown, { zeroPad } from "react-countdown";
 
@@ -51,7 +51,10 @@ const Item = styled.div`
     rgb(132, 134, 169, 0.3) 50%
   );
   color: var(--soft-red);
-  padding: 1rem;
+  width: 6rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
   font-size: 3rem;
   border-radius: 5px;
   box-shadow: 0px 5px 3px 0px var(--blue-black);

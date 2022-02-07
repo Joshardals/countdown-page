@@ -4,12 +4,11 @@ import Footer from "./components/Footer";
 import Time from "./components/Time";
 
 export default function Home() {
-  const dhms = { days: 8, hours: 23, minutes: 55, seconds: 41 };
   return (
     <Wrapper>
       <Head>
         <title>Launch Countdown Timer</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-32x32.png" />
       </Head>
       <Launch>WE'RE ARE LAUNCHING SOON</Launch>
       <Time />

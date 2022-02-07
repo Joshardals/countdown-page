@@ -1,29 +1,43 @@
-# Next.js + Tailwind CSS Example
+# Frontend Mentor - Launch countdown timer solution
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+## Table of contents
 
-## Preview
+- [Overview](#overview)
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Built with](#built-with)
+- [Author](#author)
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+## Overview
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+### The challenge
 
-## Deploy your own
+Users should be able to:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+### Screenshot
 
-## How to use
+![Desktop](./public/screenshots/countdown-desktop.png)
+![Mobile](./public/screenshots/countdown-mobile.png)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+### Links
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+- Solution URL: [https://countdown-page-omega.vercel.app/](https://countdown-page-omega.vercel.app/)
+- Live Site URL: [https://countdown-page-omega.vercel.app/](https://countdown-page-omega.vercel.app/)
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+### Built with
+
+- HTML
+- CSS
+- Styled-Components
+
+## Author
+
+- Github - [@Joshardals] (https://github.com/Joshardals/)
+- Frontend Mentor - [@joshardals](https://www.frontendmentor.io/profile/Joshardals)
+- Twitter - [@Joshardals](https://www.twitter.com/joshardals)
